@@ -67,105 +67,128 @@ switch( n ){
 Задача 3
 Задача 4
 Решение задач
+
 Все решения задач я оформил в виде функций по нажатию по кнопке, а вывод направляю в консоль
+1
 
-function num1()
-{
-    if(true)
-        console.log(true)
-    else
-        console.log(false)
+	function num1()
+	{
+	    if(true)
+		console.log(true)
+	    else
+		console.log(false)
+	    if(false)
+		console.log(true)
+	    else
+		console.log(false)
+	}
 
-    if(false)
-        console.log(true)
-    else
-        console.log(false)
-}
-function num2()
-{
-    let m = Math.floor(Math.random() * 100);
-    if (m > 50) console.log("большое " + m)
-    else console.log("маленькое " + m)
-}
-function num3()
-{
-    var i = 2;
-    var j = 0;
-    while( i < 9 ){
- 	    console.log( i++ );
-        j++;
-    }
-console.log("Цикл выполнился "+j+" раз");
-}
-function num4()
-{
-    for(let i = 45; i < 68; i++ )
-        console.log(i);
-}
-function num5()
-{
-    for(let i = 45; i < 671; i++ )
-        if(i % 10 == 0) console.log(i);
-}
-function num6()
-{
-    for(let i = 45; i < 671; i++ )
-        if(i % 10 == 0 || i < 68) console.log(i);
-}
-function num7()
-{
-    var n = Math.floor(Math.random()*10);
-    console.log("Число " + n)
-    switch(n){
-        case 1: {
-            console.log('один')
-            break;
-        }
-        case 2: {
-            console.log('два')
-            break;
-        }
-        case 3: {
-            console.log('три')
-            break;
-        }
-        case 4: {
-            console.log('четыре')
-            break;
-        }
-        case 5: {
-            console.log('пять')
-            break;
-        }
-        case 6: {
-            console.log('шесть')
-            break;
-        }
-        case 7: {
-            console.log('семь')
-            break;
-        }
-        case 8: {
-            console.log('восемь')
-            break;
-        }
-        case 9: {
-            console.log('девять')
-            break;
-            }
-        case 0: {
-            console.log('ноль')
-            break;
-        }
-    }
-}
-function num8()
-{
-    for(let i = 0; i < 8; i++)
-        document.write('<img src="mops.jpg" alt="mops" />')
-}
-function num9()
-{
+2
+
+	function num2()
+	{
+	    let m = Math.floor(Math.random() * 100);
+	    if (m > 50) console.log("большое " + m)
+	    else console.log("маленькое " + m)
+	}
+
+3
+
+	function num3()
+	{
+	    var i = 2;
+	    var j = 0;
+	    while( i < 9 ){
+		    console.log( i++ );
+		j++;
+	    }
+	console.log("Цикл выполнился "+j+" раз");
+	}
+
+4
+
+	function num4()
+	{
+	    for(let i = 45; i < 68; i++ )
+		console.log(i);
+	}
+
+5
+
+	function num5()
+	{
+	    for(let i = 45; i < 671; i++ )
+		if(i % 10 == 0) console.log(i);
+	}
+6
+
+	function num6()
+	{
+	    for(let i = 45; i < 671; i++ )
+	   if(i % 10 == 0 || i < 68) console.log(i);
+	}
+
+7
+
+		function num7()
+		{
+		    var n = Math.floor(Math.random()*10);
+		    console.log("Число " + n)
+		    switch(n){
+			case 1: {
+			    console.log('один')
+			    break;
+			}
+			case 2: {
+			    console.log('два')
+			    break;
+			}
+			case 3: {
+			    console.log('три')
+			    break;
+			}
+			case 4: {
+			    console.log('четыре')
+			    break;
+			}
+			case 5: {
+			    console.log('пять')
+			    break;
+			}
+			case 6: {
+			    console.log('шесть')
+			    break;
+			}
+			case 7: {
+			    console.log('семь')
+			    break;
+			}
+			case 8: {
+			    console.log('восемь')
+			    break;
+			}
+			case 9: {
+			    console.log('девять')
+			    break;
+			    }
+			case 0: {
+			    console.log('ноль')
+			    break;
+			}
+		    }
+		}
+8
+
+	function num8()
+	{
+	    for(let i = 0; i < 8; i++)
+		document.write('<img src="mops.jpg" alt="mops" />')
+	}
+
+9
+
+	function num9()
+	{
     let size = 120;
     let unit = "Кб";
     switch(unit)
@@ -184,200 +207,221 @@ function num9()
     }
     console.log(size);
 }
-function num10()
-{
-    let style = "<style>\n table,th,td,caption \n{\n border: 2px solid black;\n border-collapse: collapse; \n}\n</style>\n"
-    let str = '<table>\n<caption>Май</caption>\n<tr>\n';
-    for(let i = 1; i<=7; i++)
-    {
-        switch(i){
-            case 1:
-                str+="<th>Пн</th>\n";
-                break;
-            case 2:
-                str+="<th>Вт</th>\n";
-                break;
-            case 3:
-                str+="<th>Ср</th>\n";
-                break;
-            case 4:
-                str+="<th>Чт</th>\n";
-                break;
-            case 5:
-                str+="<th>Пт</th>\n";
-                break;
-            case 6:
-                str+="<th>Сб</th>\n";
-                break;
-            case 7:
-                str+="<th>Вс</th>\n";
-                break;   
-        }
-    }
-    str+="</tr>\n"
-    for(let i = 1; i <= 31; i++)
-    {
-        str+=`<td>${i}</td>\n`;
-        if(i % 7 == 0 ) str +="</tr>\n<tr>\n";
-        if(i == 31) str += "</tr>"
-    }
-    str+="</table>";
-    document.write(style + str);
-}
-function hello1()
-{
-    return "Привет, JavaScript!";
-}
 
-function num11()
-{
-    console.log(hello1());
-}
-function hello2(name)
-{
-    if(name == "") return "Привет, гость";
-    return "Привет, " + name;
-}
+10
 
-function num12()
-{
-    console.log(hello2(prompt("Введите ваше имя")));
-}
-function mul(n,m)
-{
-    return n*m;
-}
+	function num10()
+	{
+	    let style = "<style>\n table,th,td,caption \n{\n border: 2px solid black;\n border-collapse: collapse; \n}\n</style>\n"
+	    let str = '<table>\n<caption>Май</caption>\n<tr>\n';
+	    for(let i = 1; i<=7; i++)
+	    {
+		switch(i){
+		    case 1:
+			str+="<th>Пн</th>\n";
+			break;
+		    case 2:
+			str+="<th>Вт</th>\n";
+			break;
+		    case 3:
+			str+="<th>Ср</th>\n";
+			break;
+		    case 4:
+			str+="<th>Чт</th>\n";
+			break;
+		    case 5:
+			str+="<th>Пт</th>\n";
+			break;
+		    case 6:
+			str+="<th>Сб</th>\n";
+			break;
+		    case 7:
+			str+="<th>Вс</th>\n";
+			break;   
+		}
+	    }
+	    str+="</tr>\n"
+	    for(let i = 1; i <= 31; i++)
+	    {
+		str+=`<td>${i}</td>\n`;
+		if(i % 7 == 0 ) str +="</tr>\n<tr>\n";
+		if(i == 31) str += "</tr>"
+	    }
+	    str+="</table>";
+	    document.write(style + str);
+	}
+	function hello1()
+	{
+	    return "Привет, JavaScript!";
+	}
 
-function num13()
-{
-    let n = prompt("n=");
-    let m = prompt("m=");
-    console.log(mul(n,m));
-}
-function repeat(str,n)
-{
-    if(n=="") n = 2;
-    let result = "";
-    for(let i = 0; i < n; i++)
-        result += str;
-    return result;
-}
+11
+	
+	function num11()
+	{
+	    console.log(hello1());
+	}
+	function hello2(name)
+	{
+	    if(name == "") return "Привет, гость";
+	    return "Привет, " + name;
+	}
+12
 
-function num14()
-{
-    let str = prompt("str=");
-    let n = prompt("n=");
-    console.log(repeat(str,n));
-}
-function rgb(r=0,g=0,b=0)
-{
-    return `rgb(${r},${g},${b})`;
-}
+		function num12()
+		{
+		    console.log(hello2(prompt("Введите ваше имя")));
+		}
+		function mul(n,m)
+		{
+		    return n*m;
+		}
 
-function num15()
-{
-    let r = prompt("r=");
-    let g = prompt("g=");
-    let b = prompt("b=");
-    console.log(rgb(r,g,b));
-}
-function avg(...args)
-{
-    let result = 0;
-    for(let i = 0; i < args.length; i++)
-        result+= args[i];
-    return result / args.length;
-}
+13
 
-function num16()
-{
-    console.log(avg(1,2,3,4,5,6));
-}
-function m(a,b)
-{
-    return `${a} * ${b} = ${mul(a,b)}`;
-}
+	function num13()
+	{
+	    let n = prompt("n=");
+	    let m = prompt("m=");
+	    console.log(mul(n,m));
+	}
+	function repeat(str,n)
+	{
+	    if(n=="") n = 2;
+	    let result = "";
+	    for(let i = 0; i < n; i++)
+		result += str;
+	    return result;
+	}
 
-function log(str)
-{
-    console.log(str);
-}
+14
 
-function num17()
-{
-    let a = parseInt(prompt("a="));
-    let b = parseInt(prompt("b="));
-    log(m(a,b));
-}
-function operation(m,n,o)
-{
-    return o(m,n);
-}
+	function num14()
+	{
+	    let str = prompt("str=");
+	    let n = prompt("n=");
+	    console.log(repeat(str,n));
+	}
+	function rgb(r=0,g=0,b=0)
+	{
+	    return `rgb(${r},${g},${b})`;
+	}
+15
 
-function num18()
-{
-    console.log(operation(5,4,mul));
-}
-function addN(n)
-{
-    return x => x + n; 
-}
+	function num15()
+	{
+	    let r = prompt("r=");
+	    let g = prompt("g=");
+	    let b = prompt("b=");
+	    console.log(rgb(r,g,b));
+	}
+	function avg(...args)
+	{
+	    let result = 0;
+	    for(let i = 0; i < args.length; i++)
+		result+= args[i];
+	    return result / args.length;
+	}
 
-function num19()
-{
-    let n = parseInt(prompt("n="));
-    let x = parseInt(prompt("x="));
-    let func = addN(n);
-    console.log(func(x));
-}
-function words(n)
-{
-    let temp = n % 100;
-    if(temp == 11 
-    || temp == 12 
-    || temp == 13 
-    || temp == 14 ) return `${n} товаров`;
+16
 
-    temp = n % 10;
+	function num16()
+	{
+	    console.log(avg(1,2,3,4,5,6));
+	}
+	function m(a,b)
+	{
+	    return `${a} * ${b} = ${mul(a,b)}`;
+	}
 
-    switch(temp)
-    {
-        case 1: return `${n} товар`;
+	function log(str)
+	{
+	    console.log(str);
+	}
 
-        case 2:
-        case 3: 
-        case 4: return `${n} товара`;
+17
 
-        default: return `${n} товаров`;
-    } 
-}
+	function num17()
+	{
+	    let a = parseInt(prompt("a="));
+	    let b = parseInt(prompt("b="));
+	    log(m(a,b));
+	}
+	function operation(m,n,o)
+	{
+	    return o(m,n);
+	}
 
-function num20()
-{
-    let n = parseInt(prompt("n="));
-    console.log(words(n));
-}
-Решение задач CodeWars:
-function xPlusY(n){
-    let result = 0;
-    while(n.indexOf("1") != n.length - 1 && n.indexOf("1") != -1)
-    {
-        if(n.indexOf("11") < n.indexOf("10") && n.indexOf("11") != -1) 
-        {
-             n = n.replace("11","00");
-             result++;
-        } else if (n.indexOf("10") != -1)
-        {
-             n = n.replace("10","01");
-             result++;
-        } else
-        {
-            n = n.replace("11","00");
-            result++;
-        }
-    }
-    if(n[n.length - 1] == "1") result++;
-    return result;
-}
+18
+
+	function num18()
+	{
+	    console.log(operation(5,4,mul));
+	}
+	function addN(n)
+	{
+	    return x => x + n; 
+	}
+
+19
+
+	function num19()
+	{
+	    let n = parseInt(prompt("n="));
+	    let x = parseInt(prompt("x="));
+	    let func = addN(n);
+	    console.log(func(x));
+	}
+	function words(n)
+	{
+	    let temp = n % 100;
+	    if(temp == 11 
+	    || temp == 12 
+	    || temp == 13 
+	    || temp == 14 ) return `${n} товаров`;
+
+	    temp = n % 10;
+
+	    switch(temp)
+	    {
+		case 1: return `${n} товар`;
+
+		case 2:
+		case 3: 
+		case 4: return `${n} товара`;
+
+		default: return `${n} товаров`;
+	    } 
+	}
+	
+20 
+
+	function num20()
+	{
+	    let n = parseInt(prompt("n="));
+	    console.log(words(n));
+	}
+	Решение задач CodeWars:
+	function xPlusY(n){
+	    let result = 0;
+	    while(n.indexOf("1") != n.length - 1 && n.indexOf("1") != -1)
+	    {
+		if(n.indexOf("11") < n.indexOf("10") && n.indexOf("11") != -1) 
+		{
+		     n = n.replace("11","00");
+		     result++;
+		} else if (n.indexOf("10") != -1)
+		{
+		     n = n.replace("10","01");
+		     result++;
+		} else
+		{
+		    n = n.replace("11","00");
+		    result++;
+		}
+	    }
+	    if(n[n.length - 1] == "1") result++;
+	    return result;
+	}
 Вывод
 Научился создавать функции.
